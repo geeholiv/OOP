@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class Paciente {
+    String nome;
+    String endereco;
+    int cpf;
+    char sexo;
+    String nivelDeEscolaridade;
+    String email;
+    LocalDate dataDeNascimento;
+}
