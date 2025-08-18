@@ -1,0 +1,82 @@
+public class Cadeira {
+    String cor;
+    String material;
+    String marca;
+    String ambienteDeUso;
+    double valor;
+
+    public String getCor() {
+        return cor;
+    }
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+    public String getMaterial() {
+        return material;
+    }
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+    public String getMarca() {
+        return marca;
+    }
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+    public String getAmbienteDeUso() {
+        return ambienteDeUso;
+    }
+    public void setAmbienteDeUso(String ambienteDeUso) {
+        this.ambienteDeUso = ambienteDeUso;
+    }
+    public double getValor() {
+        return valor;
+    }
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+}
+
+
+import java.util.Scanner;
+public class ObjetoCadeira {
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        Cadeira[] cadeira1 = new Cadeira[4];
+
+        for (int i = 1; i < 4; i ++) {
+            cadeira1[i] = new Cadeira();
+
+            System.out.println("Informe os dados da " +i+ " ° cadeira");
+            System.out.println("Digite a cor: ");
+            String cor = ler.nextLine();
+            System.out.println("Digite o material: ");
+            String material = ler.nextLine();
+            System.out.println("Digite a marca: ");
+            String marca = ler.nextLine();
+            System.out.println("Digite o ambiente de uso: ");
+            String ambienteDeUSo = ler.nextLine();
+            System.out.println("Digite o valor: ");
+            double valor = ler.nextDouble();
+            ler.nextLine();
+
+            cadeira1[i].setCor(cor);
+            cadeira1[i].setMaterial(material);
+            cadeira1[i].setMarca(marca);
+            cadeira1[i].setAmbienteDeUso(ambienteDeUSo);
+            cadeira1[i].setValor(valor);
+        }
+
+        for (int i = 1; i < 4; i ++) {
+            System.out.println("----Cadastro " + i + "° CADEIRA----");
+            System.out.println("Cor: " + cadeira1[i].getCor());
+            System.out.println("Material: " + cadeira1[i].getMaterial());
+            System.out.println("Marca: " + cadeira1[i].getMarca());
+            System.out.println("Ambiente de uso: " + cadeira1[i].getAmbienteDeUso());
+            System.out.println("Valor: " + " R$" + cadeira1[i].getValor());
+
+        }
+
+    }
+
+}
