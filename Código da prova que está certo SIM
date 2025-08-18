@@ -1,0 +1,61 @@
+public class Funcionario {
+    String nome;
+    String cargo;
+    int matricula;
+    double salario;
+
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public String getCargo() {
+        return cargo;
+    }
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+    public int getMatricula() {
+        return matricula;
+    }
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
+    public double getSalario() {
+        return salario;
+    }
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+}
+
+
+import java.util.Scanner;
+public class ObjetoFuncionario {
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        Funcionario funcionario1 = new Funcionario();
+
+        System.out.println("Digite seu nome: ");
+        String nome = ler.nextLine();
+        System.out.println("Digite seu cargo: ");
+        String cargo = ler.nextLine();
+        System.out.println("Digite sua matricula: ");
+        int matricula = ler.nextInt();
+        System.out.println("Digite seu salario: ");
+        double salario = ler.nextDouble();
+
+        funcionario1.setNome(nome);
+        funcionario1.setCargo(cargo);
+        funcionario1.setMatricula(matricula);
+        funcionario1.setSalario(salario);
+
+        System.out.println("Cadastro");
+        System.out.println("Nome: " + funcionario1.getNome());
+        System.out.println("Cargo: " + funcionario1.getCargo());
+        System.out.println("Matricula: " + funcionario1.getMatricula());
+        System.out.println("Salario: " + funcionario1.getSalario());
+
+    }
+}
