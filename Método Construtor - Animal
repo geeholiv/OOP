@@ -1,0 +1,46 @@
+public class Animal {
+    private double tamanho;
+    private String cor;
+
+    public Animal (){
+    }
+    public Animal (double tamanho){
+        this.tamanho=tamanho;
+    }
+    public Animal (double tamanho, String cor){
+        this.tamanho=tamanho;
+        this.cor=cor;
+    }
+
+    public double getTamanho() {
+        return tamanho;
+    }
+
+    public void setTamanho(double tamanho) {
+        this.tamanho = tamanho;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+}
+
+public class ConstrutorAnimal {
+    public static void main (String [] args){
+        Animal animal1= new Animal ();
+        Animal animal2= new Animal (4.44);
+        Animal animal3= new Animal (4.44, "Amarelo");
+
+        System.out.println ("-------- Cadastro dos Animais: -------");
+        System.out.println ("----- Animal 01-----");
+        System.out.println ("----- Animal 02-----");
+        System.out.println ("Tamanho: " + animal2.getTamanho());
+        System.out.println ("----- Animal 03-----");
+        System.out.println ("Tamanho: " + animal3.getTamanho());
+        System.out.println ("Cor: " + animal3.getCor());
+    }
+}
