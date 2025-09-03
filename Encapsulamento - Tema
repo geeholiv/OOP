@@ -1,0 +1,61 @@
+package ExercicioFesta;
+
+public class Tema {
+    private long id;
+    private String nome;
+    private double valorAluguel;
+    private String corToalha;
+
+    public Tema(long id, String nome, double valorAluguel, String corToalha) {
+        this.id = id;
+        this.nome = nome;
+        this.valorAluguel = valorAluguel;
+        this.corToalha = corToalha;
+    }
+
+    public long getId() {
+        return this.id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getCorToalha() {
+        return this.corToalha;
+    }
+
+    public void setCorToalha(String corToalha) {
+        this.corToalha = corToalha;
+    }
+
+    public double getValorAluguel() {
+        return this.valorAluguel;
+    }
+
+    public void setValorAluguel(double valorAluguel) {
+        this.valorAluguel = valorAluguel;
+    }
+
+    public String getNome() {
+        return this.nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+}
+
+
+package ExercicioFesta;
+
+public class ObjetoTema {
+    public static void main(String[] args) {
+        Tema tema = new Tema(2L, "Fantasia", (double)5000.0F, "Verde");
+        System.out.println("--------Tema da festa--------");
+        System.out.println("Id:" + tema.getId());
+        System.out.println("Nome: " + tema.getNome());
+        System.out.println("Valor do Aluguel: R$" + tema.getValorAluguel());
+        System.out.println("Cor da Toalha de decoração: " + tema.getCorToalha());
+    }
+}
