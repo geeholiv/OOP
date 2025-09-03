@@ -1,0 +1,49 @@
+package ExercicioFesta;
+
+public class ItemTema {
+    private long id;
+    private String nome;
+    private String descricao;
+
+    public ItemTema(long id, String nome, String descricao) {
+        this.id = id;
+        this.nome = nome;
+        this.descricao = descricao;
+    }
+
+    public long getId() {
+        return this.id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getDescricao() {
+        return this.descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getNome() {
+        return this.nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+}
+
+package ExercicioFesta;
+
+public class ObjetoItemTema {
+    public static void main(String[] args) {
+        ItemTema itemTema = new ItemTema(4L, "fantasia", "Festa a fantasia!");
+        System.out.println("-------Item Festa--------");
+        System.out.println("Id:" + itemTema.getId());
+        System.out.println("Nome: " + itemTema.getNome());
+        System.out.println("Descrição: " + itemTema.getDescricao());
+    }
+}
