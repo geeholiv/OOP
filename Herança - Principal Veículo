@@ -3,7 +3,7 @@ package Atividade;
 public class Principal {
     public static void main (String [] args){
         // Criando um Veiculo Automático
-        VeiculoAutomovel veiculoAutomovel= new VeiculoAutomovel ("Toyota", "Etios", 2012, "Cinza", 4, "1.5");
+        VeiculoAutomovel veiculoAutomovel= new VeiculoAutomovel ("Ford", "Mustang", 1965, "Branco", 4, "1.5");
         System.out.println ("--------Veículo Automóvel--------");
         System.out.println ("Marca: "+ veiculoAutomovel.getMarca());
         System.out.println ("Modelo: " + veiculoAutomovel.getModelo());
@@ -13,7 +13,7 @@ public class Principal {
         System.out.println ("Motor: "+ veiculoAutomovel.getMotor());
 
         //Criando Veículo Moto
-        VeiculoMoto veiculoMoto= new VeiculoMoto("Kawasaki", "Ninja 500", 2024, "Verde", 451);
+        VeiculoMoto veiculoMoto= new VeiculoMoto("Honda", "Start 160", 2024, "Rosa", 451);
         System.out.println ("--------Veículo Moto--------");
         System.out.println ("Marca: "+ veiculoMoto.getMarca());
         System.out.println ("Modelo: " + veiculoMoto.getModelo());
